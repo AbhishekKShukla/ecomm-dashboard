@@ -17,7 +17,8 @@ const Header = () => {
           {localStorage.getItem("user-info") ? (
             <>
               <Link to="/add">Add Product</Link>
-              <Link to="/update">Update Product</Link>
+              <Link to="/update/:Id">Update Product</Link>
+              <Link to="/ProductList">Product List</Link>
             </>
           ) : (
             <>
